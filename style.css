@@ -1,0 +1,344 @@
+body {
+  background-color: #ebebeb;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #f8f8f8;
+  box-shadow: 0px 0px 5px #ccc;
+  margin-top: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+nav a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  padding: 20px;
+}
+nav a:hover {
+  font-weight: bold;
+}
+nav .brand {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-image: url("assets/download.jpg");
+  background-size: cover;
+  height: 500px;
+}
+
+.home .one {
+  color: red;
+}
+.home .two {
+  color: white;
+}
+.brands {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 20px;
+}
+.home h3 {
+  color: white;
+}
+
+.gallerysatu .pertama {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  height: 400px;
+}
+.pertama {
+  /* border: 1px solid #ccc; */
+}
+.pertama img {
+  border-radius: 50%;
+  margin-left: 80px;
+}
+.satu,
+.dua,
+.tiga {
+  /* border: 1px solid #ccc; */
+  width: 400px;
+  padding: 20px;
+}
+.satu:hover,
+.dua:hover,
+.tiga:hover {
+  /* border: 1px solid #ccc; */
+  box-shadow: 0px 0px 20px #ccc;
+  border-radius: 10px;
+  width: 400px;
+  padding: 20px;
+}
+
+.gallerydua .kedua {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  height: 400px;
+}
+.kedua img {
+  border-radius: 50%;
+  margin-left: 80px;
+}
+.empat,
+.lima,
+.enam {
+  /* border: 1px solid #ccc; */
+  width: 400px;
+  padding: 20px;
+}
+.empat:hover,
+.lima:hover,
+.enam:hover {
+  /* border: 1px solid #ccc; */
+  width: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 20px #ccc;
+}
+.pertama h3,
+article {
+  text-align: center;
+}
+.kedua h3,
+article {
+  text-align: center;
+}
+.pesan {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  height: 300px;
+  /* border: 1px solid #ccc; */
+}
+.pesan form {
+  /* border: 1px solid #ccc; */
+  width: 800px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.pesan h3 {
+  text-align: center;
+}
+form input {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.pesan button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: green;
+}
+
+.creator {
+  width: 300px;
+  /* border: 1px solid #ccc; */
+  height: 100px;
+}
+.creator:hover {
+  width: 300px;
+  /* border: 1px solid #ccc; */
+  height: 100px;
+  box-shadow: 0px 0px 20px #ccc;
+}
+.fotonama {
+  display: flex;
+  justify-content: space-between;
+}
+.fotonama img {
+  border-radius: 50%;
+  margin: 20px 0px 0px 20px;
+}
+.slider-wrapper {
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
+.slide {
+  float: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+  opacity: 1;
+}
+
+.footer {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+}
+
+.footer .dikiri p {
+  color: #8f9296;
+  font-size: 14px;
+  margin: 0;
+}
+/* Footer links */
+
+.footer p.kenavbar {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.25s;
+}
+
+.footer p.kenavbar a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.25s;
+}
+
+.footer .kenavbar a:before {
+  content: "·";
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer .kenavbar .link-1:before {
+  content: none;
+}
+
+.footer .footer-sosmed {
+  float: right;
+  margin-top: 6px;
+  max-width: 180px;
+}
+
+.footer .footer-sosmed a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer .footer-sosmed a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.footer p.kenavbar a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  nav .brand {
+    text-align: center;
+  }
+  .home h1 {
+    font-size: 50px;
+  }
+  .gallerysatu .pertama {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .pertama img {
+    margin-left: 0;
+    border-radius: 50%;
+  }
+  .satu,
+  .dua,
+  .tiga {
+    width: 100%;
+    padding: 20px;
+  }
+  .satu:hover,
+  .dua:hover,
+  .tiga:hover {
+    /* border: 1px solid #ccc; */
+    box-shadow: 0px 0px 20px #ccc;
+    border-radius: 10px;
+    width: 270px;
+    padding: 20px;
+  }
+  .gallerydua .kedua {
+    display: none;
+  }
+  .pesan {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .pesan form {
+    width: 100%;
+  }
+  .creator {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+  .creator:hover {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  .fotonama img {
+    margin: 10px 0px 0px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer .dikiri,
+  .footer .footer-sosmed {
+    text-align: center;
+  }
+  .footer .footer-sosmed {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer .dikiri p.kenavbar {
+    line-height: 1.8;
+  }
+}
